@@ -8,7 +8,7 @@ export class NewsItem extends Component {
 <div className="flex">
 <div className="max-w-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="#">
-        <img className="rounded-t-lg max-h-72 w-[100%]" src={imageUrl?imageUrl:"https://image.cnbcfm.com/api/v1/image/107190802-1675826966284-gettyimages-1246877736-BIDEN_SOTU.jpeg?v=1676989221&w=1920&h=1080"} alt="" />
+        <img className="rounded-t-lg  w-[100%]" src={imageUrl?imageUrl:"https://image.cnbcfm.com/api/v1/image/107190802-1675826966284-gettyimages-1246877736-BIDEN_SOTU.jpeg?v=1676989221&w=1920&h=1080"} alt="" />
     </a>
     <div className="p-5">
         <a href="#">
