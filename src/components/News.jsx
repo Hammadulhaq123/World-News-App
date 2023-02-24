@@ -7,7 +7,7 @@ import PropTypes from 'prop-types'
 export class News extends Component {
 
   static defaultProps = {
-    country: "in",
+    country: "us",
     category: "general",
     pageSize: 11,
     name: "Top Headlines",
@@ -82,7 +82,7 @@ export class News extends Component {
         
           {!this.state.loading && this.state.articles.map((element)=>{
             return(
-              <NewsItem key={element.url} title={element.title} description={element.description} imageUrl={element.urlToImage} newsUrl={element.url}/>
+              <NewsItem key={element.url} author={element.author} date={element.publishedAt} title={element.title} description={element.description} imageUrl={element.urlToImage} newsUrl={element.url}/>
             )
           })} 
         </div>
