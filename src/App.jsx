@@ -14,6 +14,7 @@ import About from "./components/About";
 
 export default class App extends Component {
 
+  pagesize = 12;
   render() {
     // const category = "sports";
     return (
@@ -32,43 +33,43 @@ export default class App extends Component {
 
           <Route exact path="/" element={
             <>
-              <News name="Top Headlines" key="gen" pageSize={12} counrty="us" category="general" />
+              <News name="Top Headlines" key="gen" pageSize={this.pagesize} counrty="in" category="general" />
             </>
           } />
 
           <Route exact path="/general" element={
             <>
-              <News name="General" key="general" pageSize={12} counrty="us" category="general" />
+              <News name="General" key="general" pageSize={this.pagesize} counrty="in" category="general" />
             </>
           } />
           <Route path="/sports" element={
             <>
-              <News name="Sports" key="sports" pageSize={12} counrty="us" category="sports" />
+              <News name="Sports" key="sports" pageSize={this.pagesize} counrty="in" category="sports" />
             </>
           } />
           <Route path="/business" element={
             <>
-              <News name="Business" key="business" pageSize={12} counrty="us" category="business" />
+              <News name="Business" key="business" pageSize={this.pagesize} counrty="in" category="business" />
             </>
           } />
           <Route path="/entertainment" element={
             <>
-              <News name="Entertainment" key="entertainment" pageSize={12} counrty="us" category="entertainment" />
+              <News name="Entertainment" key="entertainment" pageSize={this.pagesize} counrty="in" category="entertainment" />
             </>
           } />
           <Route path="/health" element={
             <>
-              <News name="Health" key="health" pageSize={12} counrty="us" category="health" />
+              <News name="Health" key="health" pageSize={this.pagesize} counrty="in" category="health" />
             </>
           } />
           <Route path="/science" element={
             <>
-              <News name="Science" key="science" pageSize={12} counrty="us" category="science" />
+              <News name="Science" key="science" pageSize={this.pagesize} counrty="in" category="science" />
             </>
           } />
           <Route path="/technology" element={
             <>
-              <News name="Technology" key="technology" pageSize={12} counrty="us" category="technology" />
+              <News name="Technology" key="technology" pageSize={this.pagesize} counrty="in" category="technology" />
             </>
           } />
 
